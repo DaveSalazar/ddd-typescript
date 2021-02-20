@@ -1,7 +1,7 @@
 import { User } from "../../domain/User";
 import { UserRepository } from "../../domain/UserRepository";
 
-export class UserSave {
+export class GetAllUsers {
 
   readonly repository: UserRepository;
   
@@ -9,7 +9,7 @@ export class UserSave {
     this.repository = repository
   }
 
-  async run(user: User):Promise<void> {
-    await this.repository.save(user);
+  async handle(): Promise<User[]> {
+    return await this.repository.all();
   }
 }

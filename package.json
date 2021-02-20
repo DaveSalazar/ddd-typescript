@@ -4,9 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node-dev src/apps/index.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@types/uuid": "^8.3.0",
+    "@types/uuid-validate": "0.0.1",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2",
+    "uuid-validate": "0.0.3"
+  }
 }

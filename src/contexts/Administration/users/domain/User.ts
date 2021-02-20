@@ -13,8 +13,5 @@ export class User extends AggregateRoot {
         this.email = email;
     }
 
-    toPrimitives() {
-        throw new Error("Method not implemented.");
-    }
 
 }
